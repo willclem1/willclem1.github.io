@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <p>
-        Hello, from Memphis!
-    </p>
+    <body>
+        <h1 id="header">Hello from Memphis!</h1>
+        <p>Pick a color:</p>
+        <input type="text" id="inp"/>
+        <button onclick="pressed()">Click me</button>
+        
+        <script type="text/javascript">
+           function pressed(){
+               let text = document.getElementById("inp").value;
+               if (text === "red"){
+                   document.getElementById("header").style.color = "red";
+               } else if (text ==="blue"){
+                   document.getElementById("header").style.color = "blue";
+               } else if (text ==="green"){
+                   document.getElementById("header").style.color = "green";
+               } else {
+                   document.getElementById("header").style.color = "black";
+               }
+           }
+        
+        </script>
+    </body>
 </html>
